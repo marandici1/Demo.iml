@@ -1,0 +1,162 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-20T13:22:33.261Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.demo.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Etsy search title verification",
+        "description": "",
+        "id": "etsy-search-feature;etsy-search-title-verification",
+        "after": [
+          {
+            "result": {
+              "duration": 670000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.demo.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3217000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.demo.step_definitions.Hooks.runBeforeSteps()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "user is on the Etsy landing page",
+            "match": {
+              "location": "com.demo.step_definitions.Etsy_StepDefinitions.user_is_on_the_etsy_landing_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.demo.step_definitions.Hooks.runsAfterSteps()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2373000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.demo.step_definitions.Hooks.runBeforeSteps()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "user searches for \"books\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"books\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.demo.step_definitions.Etsy_StepDefinitions.userSearchesFor(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.demo.step_definitions.Hooks.runsAfterSteps()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.demo.step_definitions.Hooks.runBeforeSteps()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "user should see \"Books\" in the Etsy title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Books\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.demo.step_definitions.Etsy_StepDefinitions.userShouldSeeInTheEtsyTitle(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.demo.step_definitions.Hooks.runsAfterSteps()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@etsy"
+          }
+        ]
+      }
+    ],
+    "name": "Etsy search feature",
+    "description": "",
+    "id": "etsy-search-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/etsySearch.feature",
+    "tags": []
+  }
+]
