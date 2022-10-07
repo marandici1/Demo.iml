@@ -10,6 +10,6 @@ public class login {
     public void i_am_on_the_login_page() {
 
         System.out.println("Opening the login page");
-        String url = ConfigurationReader.getProperty("aici poti pune url la vytrack");
+        String url = ConfigurationReader.getProperty("https://qa2.vytrack.com/user/login");
         Driver.getDriver().get(url);    }
 }
